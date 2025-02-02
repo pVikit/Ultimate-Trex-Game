@@ -103,6 +103,11 @@ namespace Ultimate_TRex_Game_Atestat
             name.Location = new Point((sender as PictureBox).Left + 10, (sender as PictureBox).Height - 15 - notes.Height);
         }
 
+        /// <summary>
+        ///     mivaaannnnn
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Char3_MouseLeave(object sender, EventArgs e)
         {
             notes.Visible = false;
