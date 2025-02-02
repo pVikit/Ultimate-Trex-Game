@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Ultimate_TRex_Game_Atestat/1.0.0": {
+        "runtime": {
+          "Ultimate_TRex_Game_Atestat.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Ultimate_TRex_Game_Atestat/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
