@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ultimate_TRex_Game_Atestat")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5771a079a7c4329aba6515e13c04720483f736dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ultimate_TRex_Game_Atestat")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ultimate_TRex_Game_Atestat")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
