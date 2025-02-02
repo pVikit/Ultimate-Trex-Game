@@ -20,7 +20,6 @@ namespace Ultimate_TRex_Game_Atestat
 
         }
 
-        bool selected = false;
         private Point loc;
         private void ChooseForm_Load(object sender, EventArgs e)
         {
@@ -64,7 +63,6 @@ namespace Ultimate_TRex_Game_Atestat
 
         private void Char2_Click(object sender, EventArgs e)
         {
-            selected = true;
             ContinueB.Enabled = true;
 
             foreach(Control control in this.Controls)
