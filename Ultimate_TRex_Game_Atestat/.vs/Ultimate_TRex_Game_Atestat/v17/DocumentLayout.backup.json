@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A319E79F-9A58-4D60-8A38-DCFBEABF38E0}|Ultimate_TRex_Game_Atestat.csproj|d:\\programozas\\c#\\atestat\\ultimate_trex_game_atestat\\gameboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A319E79F-9A58-4D60-8A38-DCFBEABF38E0}|Ultimate_TRex_Game_Atestat.csproj|solutionrelative:gameboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A319E79F-9A58-4D60-8A38-DCFBEABF38E0}|Ultimate_TRex_Game_Atestat.csproj|D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\gameboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A319E79F-9A58-4D60-8A38-DCFBEABF38E0}|Ultimate_TRex_Game_Atestat.csproj|solutionrelative:gameboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A319E79F-9A58-4D60-8A38-DCFBEABF38E0}|Ultimate_TRex_Game_Atestat.csproj|d:\\programozas\\c#\\atestat\\ultimate_trex_game_atestat\\chooseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A319E79F-9A58-4D60-8A38-DCFBEABF38E0}|Ultimate_TRex_Game_Atestat.csproj|solutionrelative:chooseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A319E79F-9A58-4D60-8A38-DCFBEABF38E0}|Ultimate_TRex_Game_Atestat.csproj|D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\chooseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A319E79F-9A58-4D60-8A38-DCFBEABF38E0}|Ultimate_TRex_Game_Atestat.csproj|solutionrelative:chooseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A319E79F-9A58-4D60-8A38-DCFBEABF38E0}|Ultimate_TRex_Game_Atestat.csproj|d:\\programozas\\c#\\atestat\\ultimate_trex_game_atestat\\gameboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A319E79F-9A58-4D60-8A38-DCFBEABF38E0}|Ultimate_TRex_Game_Atestat.csproj|solutionrelative:gameboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A319E79F-9A58-4D60-8A38-DCFBEABF38E0}|Ultimate_TRex_Game_Atestat.csproj|d:\\programozas\\c#\\atestat\\ultimate_trex_game_atestat\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A319E79F-9A58-4D60-8A38-DCFBEABF38E0}|Ultimate_TRex_Game_Atestat.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A319E79F-9A58-4D60-8A38-DCFBEABF38E0}|Ultimate_TRex_Game_Atestat.csproj|D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 155,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,50 +42,51 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\MainForm.cs",
+              "RelativeToolTip": "MainForm.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwA4AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T07:56:34.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "GameBoardForm.cs",
               "DocumentMoniker": "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\GameBoardForm.cs",
               "RelativeDocumentMoniker": "GameBoardForm.cs",
-              "ToolTip": "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\GameBoardForm.cs*",
-              "RelativeToolTip": "GameBoardForm.cs*",
-              "ViewState": "AgIAABAAAAAAAAAAAAAqwCkAAABAAAAAAAAAAA==",
+              "ToolTip": "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\GameBoardForm.cs",
+              "RelativeToolTip": "GameBoardForm.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAwEgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-03T07:38:37.785Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GameBoardForm.cs [Design]",
-              "DocumentMoniker": "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\GameBoardForm.cs",
-              "RelativeDocumentMoniker": "GameBoardForm.cs",
-              "ToolTip": "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\GameBoardForm.cs [Design]*",
-              "RelativeToolTip": "GameBoardForm.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T18:16:33.394Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ChooseForm.cs",
               "DocumentMoniker": "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\ChooseForm.cs",
               "RelativeDocumentMoniker": "ChooseForm.cs",
-              "ToolTip": "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\ChooseForm.cs",
-              "RelativeToolTip": "ChooseForm.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAxwDIAAAAJAAAAAAAAAA==",
+              "ToolTip": "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\ChooseForm.cs*",
+              "RelativeToolTip": "ChooseForm.cs*",
+              "ViewState": "AgIAABcAAAAAAAAAAAA0wCcAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-02T18:20:03.31Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ChooseForm.cs [Design]",
               "DocumentMoniker": "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\ChooseForm.cs",
               "RelativeDocumentMoniker": "ChooseForm.cs",
-              "ToolTip": "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\ChooseForm.cs [Design]",
-              "RelativeToolTip": "ChooseForm.cs [Design]",
+              "ToolTip": "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\ChooseForm.cs [Design]*",
+              "RelativeToolTip": "ChooseForm.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-02T18:20:00.657Z",
               "EditorCaption": " [Design]"

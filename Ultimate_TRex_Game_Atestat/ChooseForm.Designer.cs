@@ -57,6 +57,7 @@
             // 
             // Char1
             // 
+            Char1.BackgroundImage = Properties.Resources.Random;
             resources.ApplyResources(Char1, "Char1");
             Char1.Name = "Char1";
             Char1.TabStop = false;

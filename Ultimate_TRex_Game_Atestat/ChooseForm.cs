@@ -29,15 +29,15 @@ namespace Ultimate_TRex_Game_Atestat
             ContinueB.Enabled = false;
             this.LocationChanged += ChooseForm_LocationChanged;
 
-            Char1.ImageLocation = "D:\\Programozas\\c#\\Ultimate_TRex_Game_Atestat\\bin\\Debug\\cat.jpg";
+            Char1.BackgroundImage = Image.FromFile(@"D:\Programozas\c#\Atestat\Ultimate_TRex_Game_Atestat\bin\Debug\Random.png");
             Char1.SizeMode = PictureBoxSizeMode.StretchImage;
             Char1.Location = new Point((this.ClientSize.Width - Char2.Width) / 2 - 250, (this.ClientSize.Height - Char2.Height) / 2 - 50);
 
-            Char2.ImageLocation = "D:\\Programozas\\c#\\Ultimate_TRex_Game_Atestat\\bin\\Debug\\frog.jpg";
+            Char2.BackgroundImage = Image.FromFile(@"D:\\Programozas\\c#\\Ultimate_TRex_Game_Atestat\\bin\\Debug\\frog.jpg");
             Char2.SizeMode = PictureBoxSizeMode.StretchImage;
             Char2.Location = new Point((this.ClientSize.Width - Char2.Width) / 2, (this.ClientSize.Height - Char2.Height) / 2 - 50);
 
-            Char3.ImageLocation = "D:\\Programozas\\c#\\Ultimate_TRex_Game_Atestat\\bin\\Debug\\potato.jpg";
+            Char3.BackgroundImage = Image.FromFile(@"D:\\Programozas\\c#\\Ultimate_TRex_Game_Atestat\\bin\\Debug\\potato.jpg");
             Char3.SizeMode = PictureBoxSizeMode.StretchImage;
             Char3.Location = new Point((this.ClientSize.Width - Char2.Width) / 2 + 250, (this.ClientSize.Height - Char2.Height) / 2 - 50);
 
@@ -101,12 +101,16 @@ namespace Ultimate_TRex_Game_Atestat
             name.Font = new Font("Times New Roman", 16);
             notes.Location = new Point((sender as PictureBox).Left + 10, (sender as PictureBox).Height + 2 * notes.Height);
             name.Location = new Point((sender as PictureBox).Left + 10, (sender as PictureBox).Height - 15 - notes.Height);
+            Char1.BackgroundImage = Image.FromFile(@"D:\Programozas\c#\Atestat\Ultimate_TRex_Game_Atestat\bin\Debug\Randomje.png");
+            Char1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void Char3_MouseLeave(object sender, EventArgs e)
         {
             notes.Visible = false;
             name.Visible = false;
+            Char1.BackgroundImage = Image.FromFile(@"D:\Programozas\c#\Atestat\Ultimate_TRex_Game_Atestat\bin\Debug\Random.png");
+            Char1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
     }
 }

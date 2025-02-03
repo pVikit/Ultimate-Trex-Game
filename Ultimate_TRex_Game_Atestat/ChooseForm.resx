@@ -170,6 +170,10 @@
   <data name="&gt;&gt;ContinueB.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Char1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
   <data name="Char1.Location" type="System.Drawing.Point, System.Drawing">
     <value>186, 121</value>
   </data>
@@ -191,7 +195,6 @@
   <data name="&gt;&gt;Char1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Char2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
