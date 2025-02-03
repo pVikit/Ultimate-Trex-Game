@@ -25,6 +25,12 @@ namespace Ultimate_TRex_Game_Atestat
             this.StartPosition = FormStartPosition.CenterScreen;
             loc = this.Location;
             this.LocationChanged += GameBoardForm_LocationChanged;
+            Character.ImageLocation = "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\bin\\Debug\\szigmapatrik.png";
+            Character.SizeMode = PictureBoxSizeMode.StretchImage;
+            ground.ImageLocation = "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\bin\\Debug\\ground.png";
+            ground.SizeMode = PictureBoxSizeMode.StretchImage;
+            Obstacle.ImageLocation = "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\bin\\Debug\\kaktusz.png";
+            Obstacle.SizeMode = PictureBoxSizeMode.StretchImage;
             startB.Visible = true;
             Menu.Visible = false;
             label1.Visible = false;
@@ -33,6 +39,9 @@ namespace Ultimate_TRex_Game_Atestat
             ScoreL.Visible = false;
             coinL.Visible = false;
             pictureBox1.Visible = false;
+            Character.Visible = false;
+            ground.Visible = false;
+            Obstacle.Visible = false;
             startB.Location = new Point((this.ClientSize.Width - startB.Width) / 2, (this.ClientSize.Height - startB.Height) / 2);
         }
 
@@ -59,6 +68,9 @@ namespace Ultimate_TRex_Game_Atestat
             ScoreL.Visible = true;
             coinL.Visible = true;
             pictureBox1.Visible = true;
+            Obstacle.Visible = true;
+            Character.Visible= true; 
+            ground.Visible = true;
         }
 
 

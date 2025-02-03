@@ -49,12 +49,10 @@ namespace Ultimate_TRex_Game_Atestat
         {
             this.Location = loc;
         }
-        int c;
 
         private void BackB_Click(object sender, EventArgs e)
         {
             Close();
-            c = 0;
         }
 
         private void ContinueB_Click(object sender, EventArgs e)
