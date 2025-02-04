@@ -195,6 +195,9 @@
   <data name="&gt;&gt;Char1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="Char2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
   <data name="Char2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -218,6 +221,9 @@
   </data>
   <data name="&gt;&gt;Char2.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="Char3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
   <data name="Char3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>

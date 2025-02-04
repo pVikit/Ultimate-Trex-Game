@@ -18,6 +18,10 @@ namespace Ultimate_TRex_Game_Atestat
         }
 
         int h = 0;
+        public static int Speed;
+        public static int Lives;
+        public static string Talent;
+        public static string Name;
         private Point loc;
         private void GameBoardForm_Load(object sender, EventArgs e)
         {
@@ -25,12 +29,28 @@ namespace Ultimate_TRex_Game_Atestat
             this.StartPosition = FormStartPosition.CenterScreen;
             loc = this.Location;
             this.LocationChanged += GameBoardForm_LocationChanged;
-            Character.ImageLocation = "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\bin\\Debug\\szigmapatrik.png";
+
+            if (Name == "Nyaki")
+            {
+                Character.ImageLocation = "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\bin\\Debug\\Random.png";
+            }
+            else if(Name == "Triko")
+            {
+                Character.ImageLocation = "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\bin\\Debug\\Proba2ul.png";
+            }
+            else if (Name == "Dini")
+            {
+                Character.ImageLocation = "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\bin\\Debug\\Proba3nyugodt.png";
+            }
             Character.SizeMode = PictureBoxSizeMode.StretchImage;
+            Character.Size = new Size(100, 100);
+
             ground.ImageLocation = "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\bin\\Debug\\ground.png";
             ground.SizeMode = PictureBoxSizeMode.StretchImage;
+
             Obstacle.ImageLocation = "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\bin\\Debug\\kaktusz.png";
             Obstacle.SizeMode = PictureBoxSizeMode.StretchImage;
+
             startB.Visible = true;
             Menu.Visible = false;
             label1.Visible = false;
@@ -42,6 +62,7 @@ namespace Ultimate_TRex_Game_Atestat
             Character.Visible = false;
             ground.Visible = false;
             Obstacle.Visible = false;
+
             startB.Location = new Point((this.ClientSize.Width - startB.Width) / 2, (this.ClientSize.Height - startB.Height) / 2);
         }
 
@@ -50,6 +71,14 @@ namespace Ultimate_TRex_Game_Atestat
             this.Location = loc;
         }
 
+        public static void Karakter_tulajdonsagai(int speed, int lives, string talent, string name)
+        {
+            Speed = speed;
+            Lives = lives;
+            Name = name;
+            Talent = talent;
+            //MessageBox.Show(Speed.ToString() + Lives.ToString() + Name + Talent);
+        }
 
         private void gameOverToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -72,7 +101,6 @@ namespace Ultimate_TRex_Game_Atestat
             Character.Visible= true; 
             ground.Visible = true;
         }
-
 
         private void resetToolStripMenuItem_Click(object sender, EventArgs e)
         {
