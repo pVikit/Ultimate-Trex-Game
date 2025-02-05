@@ -174,6 +174,11 @@ namespace Ultimate_TRex_Game_Atestat
             }
         }
 
+<<<<<<< HEAD
+=======
+        
+
+>>>>>>> d6e943ead4c775b157be3edf16cbf024f4d9967c
         private void GameReset()
         {
             force = 20;

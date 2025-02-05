@@ -34,8 +34,8 @@
               "Title": "GameBoardForm.cs [Design]",
               "DocumentMoniker": "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\GameBoardForm.cs",
               "RelativeDocumentMoniker": "GameBoardForm.cs",
-              "ToolTip": "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\GameBoardForm.cs [Design]",
-              "RelativeToolTip": "GameBoardForm.cs [Design]",
+              "ToolTip": "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\GameBoardForm.cs [Design]*",
+              "RelativeToolTip": "GameBoardForm.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-04T14:19:48.898Z",
               "EditorCaption": " [Design]"
@@ -46,8 +46,13 @@
               "Title": "GameBoardForm.cs",
               "DocumentMoniker": "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\GameBoardForm.cs",
               "RelativeDocumentMoniker": "GameBoardForm.cs",
+<<<<<<< HEAD
               "ToolTip": "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\GameBoardForm.cs",
               "RelativeToolTip": "GameBoardForm.cs",
+=======
+              "ToolTip": "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\GameBoardForm.cs*",
+              "RelativeToolTip": "GameBoardForm.cs*",
+>>>>>>> d6e943ead4c775b157be3edf16cbf024f4d9967c
               "ViewState": "AgIAAMcAAAAAAAAAAAAuwM4AAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-03T07:38:37.785Z",

@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 155,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -27,10 +27,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Document",
@@ -52,7 +48,11 @@
               "RelativeDocumentMoniker": "GameBoardForm.cs",
               "ToolTip": "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\GameBoardForm.cs",
               "RelativeToolTip": "GameBoardForm.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAK8AAAAAAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAMcAAAAAAAAAAAAuwM4AAABEAAAAAAAAAA==",
+>>>>>>> d6e943ead4c775b157be3edf16cbf024f4d9967c
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-03T07:38:37.785Z",
               "EditorCaption": ""
