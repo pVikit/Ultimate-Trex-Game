@@ -17,7 +17,6 @@ namespace Ultimate_TRex_Game_Atestat
         public ChooseForm()
         {
             InitializeComponent();
-
         }
 
         private int speed, lives;
@@ -33,19 +32,28 @@ namespace Ultimate_TRex_Game_Atestat
             this.LocationChanged += ChooseForm_LocationChanged;
 
             Char1.BackgroundImage = Image.FromFile(@"D:\Programozas\c#\Atestat\Ultimate_TRex_Game_Atestat\bin\Debug\Random.png");
-            Char1.SizeMode = PictureBoxSizeMode.StretchImage;
-            Char1.Location = new Point((this.ClientSize.Width - Char2.Width) / 2 - 250, (this.ClientSize.Height - Char2.Height) / 2 - 50);
+            Char1.SizeMode = PictureBoxSizeMode.CenterImage;
+            Char1.Location = new Point((this.ClientSize.Width - Char2.Width) / 2 - 300, (this.ClientSize.Height - Char2.Height) / 2 - 50);
 
-            Char2.BackgroundImage = Image.FromFile(@"D:\Programozas\c#\Atestat\Ultimate_TRex_Game_Atestat\bin\Debug\Proba2csukott.png");
-            Char2.SizeMode = PictureBoxSizeMode.StretchImage;
+            Char2.BackgroundImage = Image.FromFile(@"D:\Programozas\c#\Atestat\Ultimate_TRex_Game_Atestat\bin\Debug\Triko1.png");
+            Char2.SizeMode = PictureBoxSizeMode.CenterImage;
             Char2.Location = new Point((this.ClientSize.Width - Char2.Width) / 2, (this.ClientSize.Height - Char2.Height) / 2 - 50);
 
-            Char3.BackgroundImage = Image.FromFile(@"D:\Programozas\c#\Atestat\Ultimate_TRex_Game_Atestat\bin\Debug\Proba3nyugodt.png");
-            Char3.SizeMode = PictureBoxSizeMode.StretchImage;
-            Char3.Location = new Point((this.ClientSize.Width - Char2.Width) / 2 + 250, (this.ClientSize.Height - Char2.Height) / 2 - 50);
+            Char3.BackgroundImage = Image.FromFile(@"D:\Programozas\c#\Atestat\Ultimate_TRex_Game_Atestat\bin\Debug\Fogyi.png");
+            Char3.SizeMode = PictureBoxSizeMode.CenterImage;
+            Char3.Location = new Point((this.ClientSize.Width - Char2.Width) / 2 + 300, (this.ClientSize.Height - Char2.Height) / 2 - 50);
 
             notes.Visible = false;
             name.Visible = false;
+
+            selectedA = selectedB = selectedC = false;
+            foreach (Control control in this.Controls)
+            {
+                if (control is PictureBox)
+                {
+                    ((PictureBox)control).BorderStyle = BorderStyle.None;
+                }
+            }
         }
 
         private void ChooseForm_LocationChanged(object? sender, EventArgs e)
@@ -91,13 +99,13 @@ namespace Ultimate_TRex_Game_Atestat
             else if ((sender as PictureBox).Name == "Char2" && (sender as PictureBox).BorderStyle == BorderStyle.FixedSingle)
             {
                 selectedB = true;
-                Char2.BackgroundImage = Image.FromFile(@"D:\Programozas\c#\Atestat\Ultimate_TRex_Game_Atestat\bin\Debug\Proba2ul.png");
+                Char2.BackgroundImage = Image.FromFile(@"D:\Programozas\c#\Atestat\Ultimate_TRex_Game_Atestat\bin\Debug\Trikorob.png");
                 Char2.SizeMode = PictureBoxSizeMode.StretchImage;
             }
             else if ((sender as PictureBox).Name == "Char3" && (sender as PictureBox).BorderStyle == BorderStyle.FixedSingle)
             {
                 selectedC = true;
-                Char3.BackgroundImage = Image.FromFile(@"D:\Programozas\c#\Atestat\Ultimate_TRex_Game_Atestat\bin\Debug\Proba3sikit.png");
+                Char3.BackgroundImage = Image.FromFile(@"D:\Programozas\c#\Atestat\Ultimate_TRex_Game_Atestat\bin\Debug\Fogyikamikorkivalasztod.png");
                 Char3.SizeMode = PictureBoxSizeMode.StretchImage;
             }
         }
@@ -120,7 +128,7 @@ namespace Ultimate_TRex_Game_Atestat
             else if ((sender as PictureBox).Name == "Char2")
             {
                 name.Text = "Triko";
-                Char2.BackgroundImage = Image.FromFile(@"D:\Programozas\c#\Atestat\Ultimate_TRex_Game_Atestat\bin\Debug\Proba2ul.png");
+                Char2.BackgroundImage = Image.FromFile(@"D:\Programozas\c#\Atestat\Ultimate_TRex_Game_Atestat\bin\Debug\Trikorob.png");
                 Char2.SizeMode = PictureBoxSizeMode.StretchImage;
                 speed = 6;
                 lives = 4;
@@ -129,14 +137,14 @@ namespace Ultimate_TRex_Game_Atestat
             }
             else if ((sender as PictureBox).Name == "Char3")
             {
-                name.Text = "Dini";
+                name.Text = "Fogyi";
                 notes.Text = "speed: 5\nlives: 3\ntalent: skateboard";
-                Char3.BackgroundImage = Image.FromFile(@"D:\Programozas\c#\Atestat\Ultimate_TRex_Game_Atestat\bin\Debug\Proba3sikit.png");
+                Char3.BackgroundImage = Image.FromFile(@"D:\Programozas\c#\Atestat\Ultimate_TRex_Game_Atestat\bin\Debug\Fogyikamikorkivalasztod.png");
                 Char3.SizeMode = PictureBoxSizeMode.StretchImage;
                 speed = 5;
                 lives = 3;
                 talent = "skateboard";
-                nume = "Dini";
+                nume = "Fogyi";
                 
             }
 
@@ -162,12 +170,12 @@ namespace Ultimate_TRex_Game_Atestat
             }
             if (!selectedB)
             {
-                Char2.BackgroundImage = Image.FromFile(@"D:\Programozas\c#\Atestat\Ultimate_TRex_Game_Atestat\bin\Debug\Proba2csukott.png");
+                Char2.BackgroundImage = Image.FromFile(@"D:\Programozas\c#\Atestat\Ultimate_TRex_Game_Atestat\bin\Debug\Triko1.png");
                 Char2.SizeMode = PictureBoxSizeMode.StretchImage;
             }
             if (!selectedC)
             {
-                Char3.BackgroundImage = Image.FromFile(@"D:\Programozas\c#\Atestat\Ultimate_TRex_Game_Atestat\bin\Debug\Proba3nyugodt.png");
+                Char3.BackgroundImage = Image.FromFile(@"D:\Programozas\c#\Atestat\Ultimate_TRex_Game_Atestat\bin\Debug\Fogyi.png");
                 Char3.SizeMode = PictureBoxSizeMode.StretchImage;
             }
         }

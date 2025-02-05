@@ -44,13 +44,13 @@
             coinL = new Label();
             pictureBox1 = new PictureBox();
             ground = new PictureBox();
-            Character = new PictureBox();
             Obstacle = new PictureBox();
+            Character = new PictureBox();
             Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ground).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)Character).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Obstacle).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Character).BeginInit();
             SuspendLayout();
             // 
             // Menu
@@ -92,6 +92,7 @@
             // 
             // timer
             // 
+            timer.Interval = 20;
             timer.Tick += timer_Tick;
             // 
             // startB
@@ -139,25 +140,24 @@
             ground.Name = "ground";
             ground.TabStop = false;
             // 
+            // Obstacle
+            // 
+            resources.ApplyResources(Obstacle, "Obstacle");
+            Obstacle.Name = "Obstacle";
+            Obstacle.TabStop = false;
+            Obstacle.Tag = "obstacle";
+            // 
             // Character
             // 
             resources.ApplyResources(Character, "Character");
             Character.Name = "Character";
             Character.TabStop = false;
             // 
-            // Obstacle
-            // 
-            resources.ApplyResources(Obstacle, "Obstacle");
-            Obstacle.Name = "Obstacle";
-            Obstacle.TabStop = false;
-            // 
             // GameBoardForm
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             ControlBox = false;
-            Controls.Add(Obstacle);
-            Controls.Add(Character);
             Controls.Add(ground);
             Controls.Add(pictureBox1);
             Controls.Add(coinL);
@@ -167,16 +167,21 @@
             Controls.Add(ScoreL);
             Controls.Add(startB);
             Controls.Add(Menu);
+            Controls.Add(Obstacle);
+            Controls.Add(Character);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            KeyPreview = true;
             MainMenuStrip = Menu;
             Name = "GameBoardForm";
             Load += GameBoardForm_Load;
+            KeyDown += GameBoardForm_KeyDown;
+            KeyUp += GameBoardForm_KeyUp;
             Menu.ResumeLayout(false);
             Menu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)ground).EndInit();
-            ((System.ComponentModel.ISupportInitialize)Character).EndInit();
             ((System.ComponentModel.ISupportInitialize)Obstacle).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Character).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -197,7 +202,7 @@
         private Label coinL;
         private PictureBox pictureBox1;
         private PictureBox ground;
-        private PictureBox Character;
         private PictureBox Obstacle;
+        private PictureBox Character;
     }
 }

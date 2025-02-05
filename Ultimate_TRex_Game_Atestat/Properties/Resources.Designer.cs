@@ -93,6 +93,16 @@ namespace Ultimate_TRex_Game_Atestat.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fogyika {
+            get {
+                object obj = ResourceManager.GetObject("fogyika", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap game_over {
             get {
                 object obj = ResourceManager.GetObject("game-over", resourceCulture);
@@ -116,6 +126,16 @@ namespace Ultimate_TRex_Game_Atestat.Properties {
         internal static System.Drawing.Bitmap Random {
             get {
                 object obj = ResourceManager.GetObject("Random", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vlm {
+            get {
+                object obj = ResourceManager.GetObject("vlm", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
