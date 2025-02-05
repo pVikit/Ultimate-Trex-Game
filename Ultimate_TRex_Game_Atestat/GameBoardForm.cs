@@ -15,6 +15,9 @@ namespace Ultimate_TRex_Game_Atestat
         public GameBoardForm()
         {
             InitializeComponent();
+
+            Character.BackColor = Color.Transparent;
+            
         }
 
         int h = 0;
@@ -23,6 +26,15 @@ namespace Ultimate_TRex_Game_Atestat
         public static string Talent;
         public static string Name;
         private Point loc;
+
+        bool jump;
+        int jumpSpeed;
+        int force = 20;
+        int obstacleSpeed = Speed * 5;
+        Random r = new Random();
+        int pos;
+        bool isGameOver = false;
+
         private void GameBoardForm_Load(object sender, EventArgs e)
         {
             this.Size = new Size(1121, 600);
@@ -32,18 +44,20 @@ namespace Ultimate_TRex_Game_Atestat
 
             if (Name == "Nyaki")
             {
-                Character.ImageLocation = "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\bin\\Debug\\Random.png";
+                Character.Image = Image.FromFile(@"D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\bin\\Debug\\Random.png");
             }
-            else if(Name == "Triko")
+            else if (Name == "Triko")
             {
-                Character.ImageLocation = "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\bin\\Debug\\Proba2ul.png";
+                Character.Image = Image.FromFile(@"D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\bin\\Debug\\triko.gif");
             }
-            else if (Name == "Dini")
+            else if (Name == "Fogyi")
             {
-                Character.ImageLocation = "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\bin\\Debug\\Proba3nyugodt.png";
+                Character.Image = Image.FromFile(@"D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\bin\\Debug\\fogyika.gif");
             }
-            Character.SizeMode = PictureBoxSizeMode.StretchImage;
-            Character.Size = new Size(100, 100);
+            Character.SizeMode = PictureBoxSizeMode.CenterImage;
+            Character.Size = new Size(Character.Image.Height, Character.Image.Width);
+            Character.BackColor = Color.Transparent;
+            //Character.Location = new Point(157, 419);
 
             ground.ImageLocation = "D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\bin\\Debug\\ground.png";
             ground.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -77,7 +91,6 @@ namespace Ultimate_TRex_Game_Atestat
             Lives = lives;
             Name = name;
             Talent = talent;
-            //MessageBox.Show(Speed.ToString() + Lives.ToString() + Name + Talent);
         }
 
         private void gameOverToolStripMenuItem_Click(object sender, EventArgs e)
@@ -87,6 +100,7 @@ namespace Ultimate_TRex_Game_Atestat
 
         private void startB_Click(object sender, EventArgs e)
         {
+            GameReset();
             timer.Start();
             startB.Visible = false;
             Menu.Visible = true;
@@ -98,7 +112,7 @@ namespace Ultimate_TRex_Game_Atestat
             coinL.Visible = true;
             pictureBox1.Visible = true;
             Obstacle.Visible = true;
-            Character.Visible= true; 
+            Character.Visible = true;
             ground.Visible = true;
         }
 
@@ -110,8 +124,104 @@ namespace Ultimate_TRex_Game_Atestat
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            h++;
             ScoreL.Text = h.ToString();
+
+            Character.Top += jumpSpeed;
+
+            if (jump == true && force < 0)
+            {
+                jump = false;
+            }
+
+            if (jump == true)
+            {
+                jumpSpeed = -12;
+                force -= 1;
+            }
+            else
+            {
+                jumpSpeed = 12;
+            }
+
+            if (Character.Top > 420 && jump == false)
+            {
+                force = 20;
+                Character.Top = 421;
+                jumpSpeed = 0;
+            }
+
+            foreach(Control c in this.Controls)
+            {
+                if(c is PictureBox && (string)c.Tag == "obstacle")
+                {
+                    c.Left -= obstacleSpeed;
+
+                    if(c.Left < -100)
+                    {
+                        c.Left = this.ClientSize.Width + r.Next(200, 500) + (c.Width * 15);
+                        h++;
+                    }
+
+                    if(Character.Bounds.IntersectsWith(c.Bounds))
+                    {
+                        timer.Stop();
+                        Character.Image = Image.FromFile(@"D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\bin\\Debug\\Fogyikamikorkivalasztod.png");
+                        Character.SizeMode = PictureBoxSizeMode.StretchImage;
+                        MessageBox.Show("FOGYIKA BESZT");
+                        isGameOver = true;
+                    }
+                }
+            }
+        }
+
+        
+
+        private void GameReset()
+        {
+            force = 20;
+            jumpSpeed = 0;
+            jump = false;
+            ScoreL.Text = "";
+            obstacleSpeed = Speed * 5;
+            Character.Image = Properties.Resources.fogyika;
+            isGameOver = false;
+            Character.Top = 421;
+            timer.Start();
+
+            foreach (Control c in this.Controls)
+            {
+                if (c is PictureBox && (string)c.Tag == "obstacle")
+                {
+                    pos = this.ClientSize.Width + r.Next(500, 800) + (c.Width * 10);
+
+                    c.Left = pos;
+                }
+            }
+        }
+
+        private void GameBoardForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if ((e.KeyCode == Keys.Space) && jump == false)
+            {
+                jump = true;
+                Character.Image = Image.FromFile(@"D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\bin\\Debug\\Repulofogyi.png");
+                Character.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+        }
+
+        private void GameBoardForm_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (jump==true)
+            {
+                jump = false;
+                Character.Image = Image.FromFile(@"D:\\Programozas\\c#\\Atestat\\Ultimate_TRex_Game_Atestat\\bin\\Debug\\fogyika.gif");
+                Character.SizeMode = PictureBoxSizeMode.CenterImage;
+            }
+
+            if ((e.KeyCode == Keys.R) && (isGameOver == true))
+            {
+                MessageBox.Show("gg " + ScoreL.ToString());
+            }
         }
 
         private void Menu_Click(object sender, EventArgs e)

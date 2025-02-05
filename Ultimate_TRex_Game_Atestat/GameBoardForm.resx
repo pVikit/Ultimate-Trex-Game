@@ -184,10 +184,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Menu.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>8</value>
   </data>
   <metadata name="timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>153, 17</value>
+    <value>16, 44</value>
   </metadata>
   <data name="startB.Location" type="System.Drawing.Point, System.Drawing">
     <value>511, 68</value>
@@ -211,7 +211,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;startB.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>7</value>
   </data>
   <data name="ScoreL.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -238,7 +238,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ScoreL.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>6</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -265,7 +265,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -292,7 +292,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>4</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -319,7 +319,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>3</value>
   </data>
   <data name="coinL.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -349,7 +349,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;coinL.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="pictureBox1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -373,7 +373,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>1</value>
   </data>
   <data name="ground.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 511</value>
@@ -394,34 +394,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ground.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Character.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 415</value>
-  </data>
-  <data name="Character.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 94</value>
-  </data>
-  <data name="Character.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;Character.Name" xml:space="preserve">
-    <value>Character</value>
-  </data>
-  <data name="&gt;&gt;Character.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Character.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Character.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="Obstacle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>644, 415</value>
+    <value>685, 346</value>
   </data>
   <data name="Obstacle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 94</value>
+    <value>136, 161</value>
   </data>
   <data name="Obstacle.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -436,7 +415,31 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Obstacle.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>9</value>
+  </data>
+  <data name="Character.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 421</value>
+  </data>
+  <data name="Character.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 90</value>
+  </data>
+  <data name="Character.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>AutoSize</value>
+  </data>
+  <data name="Character.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;Character.Name" xml:space="preserve">
+    <value>Character</value>
+  </data>
+  <data name="&gt;&gt;Character.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Character.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Character.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
